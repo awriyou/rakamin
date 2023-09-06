@@ -9,3 +9,4 @@ for(let a of arr){
 } 
 
 //test
+console.log("hallo")
