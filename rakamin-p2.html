@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maliboro Yogyakarta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo:wght@100;400&family=Lobster&family=Lora&family=Rubik+Beastly&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-green-50 mx-auto">
+    <div class="bg-cover w-full h-[300px] sm:h-[600px] xl:h-[900px] mx-auto bg-no-repeat" style="background-image: url(img/bg.png);">
+        <div class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img src="img/logoyog.png" alt="">
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-green-800 md:bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="text-white flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto text-center">
+                    <li>
+                        <a class="hover:text-gray-200 font-semibold" href="#top-visited">Top Visited</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-200 font-semibold" href="#location">Location</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-200 font-semibold" href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-200 font-semibold" href="#testi">Testimonials</a>
+                    </li>
+                    <button class="md:hidden bg-green-700 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mt-1 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl"><a href="#story">Lets Explore</a></button>
+                </ul>
+            </div>
+            
+            <div class="md:hidden flex items-center gap-4">
+                <button class="md:hidden bg-green-700 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mt-1 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl"><a href="#story">Lets Explore</a></button>
+                <ion-icon name="menu" onclick="onToggleMenu(this)" class="text-4xl cursor-pointer hover:ring-slate-900"></ion-icon>
+            </div>
+        </div>
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[-2%]')
+            }
+        </script>
+
+
+
+
+
+
+        <div class="px-4 w-full">
+            <div class="container mt-14 sm:mt-40 md:mt-64 sm:text-center sm:mx-auto md:font-bold xl:bg-slate-700 xl:bg-opacity-40 xl:rounded-xl">
+                <p class="mb-5 font-headl text-2xl sm:text-3xl md:text-4xl xl:text-7xl text-green-700 xl:pt-4">
+                    Explore
+                    the Charm of Malioboro, Where True Inspiration Resides
+                </p>
+                <p class="font-subl text-white font-semibold text-xs sm:text-sm lg:text-xl mb-7">Culinary perfection, unique shopping, and natural
+                    <br>allure in Malioboro, an inspiring destination.
+                </p>
+                <button class="hidden md:inline bg-green-700 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mb-5 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl"><a href="#story">Lets Explore</a></button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 mx-auto" id="story">
+        <p class="font-headl text-4xl my-6">Story of “Malioboro”</p>
+        <div class="font-subl text-sm text-center">
+            <blockquote class="p-4 my-4 border-l-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800 ">
+                <p class="text-xs lg:text-xl italic font-medium leading-relaxed text-gray-900 text-left">Malioboro merupakan
+                    kawasan perbelanjaan yang legendaris yang menjadi salah satu kebanggaan kota
+                    Yogyakarta.
+                    Penamaan Malioboro berasal dari nama seorang anggota kolonial Inggris yang dahulu pernah menduduki
+                    Jogja
+                    pada tahun 1811 - 1816 M yang bernama Marlborough Kolonial Hindia Belanda membangun Malioboro di
+                    pusat
+                    kota
+                    Yogyakarta pada abad ke-19 sebagai pusat aktivitas pemerintahan dan perekonomian. Secara simbolis
+                    juga
+                    bermaksud untuk menandingi kekuasaan Keraton atas kemegahan Istananya yang mendominasi kawasan
+                    tersebut.</p>
+                <p class="text-xs lg:text-xl italic font-medium leading-relaxed text-gray-900 text-left"> <br><br>Untuk menunjang
+                    tujuan
+                    tersebut maka selanjutnya Kolonial Belanda mendirikan : Benteng Vredeburg, (
+                    didirikan pada tahun 1765. Sekarang benteng tersebut dikenang menjadi sebuah museum yang di buka
+                    untuk
+                    wisata publik ) Istana Keresidenan Kolonial ( sekarang menjadi Istana Presiden Gedung Agung di tahun
+                    1832M )
+                    Pasar Beringharjo, Hotel Garuda (dahulu sebagai tempat menginap dan berkumpul para elit kolonial.
+                    Kawasan
+                    Pertokoan Malioboro ( menjadi pusat perekonomian kolonial ) Bangunan-bangunan bersejarah yang
+                    terletak
+                    di
+                    kawasan Malioboro tersebut menjadi saksi bisu perjalanan kota ini dari masa ke masa.</p>
+                <p class="text-xs lg:text-xl italic font-medium leading-relaxed text-gray-900 text-left"> <br><br>Malioboro
+                    menyajikan berbagai aktivitas belanja, mulai dari bentuk aktivitas tradisional sampai dengan
+                    aktivitas belanja modern. Salah satu cara berbelanja di Malioboro adalah dengan proses tawar-menawar
+                    terutama untuk komoditi barang barang yang berupa souvenir dan cenderamata yang dijajakan oleh
+                    pedagang
+                    kaki
+                    lima yang berjajar di sepanjang trotoar jalan Malioboro. Berbagai macam cederamata dan kerajinan
+                    dapat
+                    anda
+                    dapatkan disini seperti kerajinan dari perak, kulit, kayu, kain batik, gerabah dan sebagainya.</p>
+            </blockquote>
+        </div>
+    </div>
+
+
+    <!-- for tablet and desktop -->
+    <div class="container px-4 py-6 mx-auto mt-6 shadow-xl my-6" id="top-visited">
+        <p class="font-headl text-4xl sm:block md:text-center mb-6 lg:mb-8">Top Visited</p>
+        <div class="container mx-auto px-6 font-serif flex flex-wrap gap-3 justify-evenly">
+            <div class="rounded-md shadow-lg overflow-hidden mb-4 sm:w-64 bg-white ">
+                <img src="img/terasmalrrrr.png" alt="" class="w-full p-2 rounded-2xl ">
+                <div class="px-6 py-4 pb-2">
+                    <div class="font-bold text-xl mb-2 text-slate-700">
+                        Teras Malioboro
+                    </div>
+                    <p class="text-base text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, doloribus.</p>
+                    <button class="bg-lime-800 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mb-5 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl mt-4">Read artc</button>
+                </div>
+            </div>
+            <div class="rounded-md shadow-lg overflow-hidden mb-4 sm:w-64 bg-white ">
+                <img src="img/gelato.png" alt="" class="w-full p-2 rounded-2xl">
+                <div class="px-6 py-4 pb-2">
+                    <div class="font-bold text-xl mb-2 text-slate-700">
+                        Malio Gelato
+                    </div>
+                    <p class="text-base text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, doloribus.</p>
+                    <button class="bg-lime-800 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mb-5 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl mt-4">Read artc</button>
+                </div>
+            </div>
+            <div class="rounded-md shadow-lg overflow-hidden mb-4 sm:w-64 bg-white ">
+                <img src="img/beringharjo.png" alt="" class="w-full p-2 rounded-2xl">
+                <div class="px-6 py-4 pb-2">
+                    <div class="font-bold text-xl mb-2 text-slate-700">
+                        Pasar Beringharjo
+                    </div>
+                    <p class="text-base text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, doloribus.</p>
+                    <button class="bg-lime-800 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mb-5 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl mt-4">Read artc</button>
+                </div>
+            </div>
+            <div class="rounded-md shadow-lg overflow-hidden mb-4 sm:w-64 bg-white ">
+                <img src="img/jos.png" alt="" class="w-full p-2 rounded-2xl">
+                <div class="px-6 py-4 pb-2">
+                    <div class="font-bold text-xl mb-2 text-slate-700">
+                        Kedai Kopi Jos
+                    </div>
+                    <p class="text-base text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, doloribus.</p>
+                    <button class="bg-lime-800 rounded-xl px-3 sm:px-4 sm:py-3 py-2 mb-5 hover:bg-white transition hover:shadow-xl text-xs font-bold text-white hover:text-slate-500 font-subl mt-4">Read artc</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end for desktop -->
+
+
+
+    <div class="container px-4 mx-auto mb-20" id="location">
+        <p class="font-headl text-4xl">Location On Google Maps</p>
+        <div class="w-full my-6">
+            <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9733568257852!2d110.36327107500503!3d-7.792645492227367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5825fa6106c5%3A0x3ea4c521a5ed1133!2sJl.%20Malioboro%2C%20Sosromenduran%2C%20Gedong%20Tengen%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1692765313590!5m2!1sid!2sid" width="" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="container px-4 py-6 mx-auto shadow-md" id="gallery">
+        <p class="font-headl text-4xl md:text-center mb-6 lg:mb-8">Tourist Gallery</p>
+        <div class="container w-full shadow-2xl md:shadow-none px-4 pb-8 flex-wrap justify-center md:flex md:items-center">
+            <img src="img/glr1.png" alt="" class="mb-4 mx-auto">
+            <img src="img/glr2.png" alt="" class="mb-4 mx-auto">
+            <img src="img/glr1.png" alt="" class="mb-4 mx-auto">
+            <img src="img/glr2.png" alt="" class="mb-4 mx-auto">
+            <img src="img/glr1.png" alt="" class="mb-4 mx-auto">
+            <img src="img/glr2.png" alt="" class="mb-4 mx-auto">
+        </div>
+    </div>
+
+
+
+    <div class="container px-4 mx-auto my-8" id="testi">
+        <p class="font-headl text-4xl py-8">Testimonials</p>
+        <div class="mx-auto flex flex-wrap justify-center gap-3 my-3">
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                <div class="w-32 h-32 bg-slate-900 rounded-full mx-auto my-8">
+                    <img src="img/ario.png" alt="" class="overflow-hidden rounded-full">
+                </div>
+                <p class="font-normal text-gray-700 text-center">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                <div class="w-32 h-32 bg-slate-900 rounded-full mx-auto my-8">
+                    <img src="img/ario.png" alt="" class="overflow-hidden rounded-full">
+                </div>
+                <p class="font-normal text-gray-700 text-center">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                <div class="w-32 h-32 bg-slate-900 rounded-full mx-auto my-8">
+                    <img src="img/ario.png" alt="" class="overflow-hidden rounded-full">
+                </div>
+                <p class="font-normal text-gray-700 text-center">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>
+        </div>
+
+    </div>
+
+
+    
+<footer class="bg-green-700 rounded-lg shadow m-4 mb-0">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Gallery</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">About Malioboro</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        <span class="text-sm text-white sm:text-center">© 2023 <a href="#" class="hover:underline">Awriyou</a>. All Rights Reserved.
+        </span>
+    </div>
+</footer>
+
+</body>
+
+</html>
