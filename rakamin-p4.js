@@ -2,7 +2,7 @@ let random = []
 let arrayGanjil = []
 let arrayGenap = []
 
-//Memasukan nilai pada array
+
 for(let i = 1; i <= 100; i ++){
     random.push(i)
     if(i % 2 == 0){
