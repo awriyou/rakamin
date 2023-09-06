@@ -10,3 +10,4 @@ for(let a of arr){
 
 //test
 console.log("HAIIIIII")
+console.log("hallo")
