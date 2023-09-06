@@ -6,4 +6,6 @@ for (i=1; i<=20; i++){
 
 for(let a of arr){
     console.log(a);
-}
+} 
+
+//test
