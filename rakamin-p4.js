@@ -93,6 +93,8 @@ function perbandinganRataRata(data1, data2){
         return("Nilai AVERAGE lebih besar array genap")
     }else {
         return('Rata-ratanya sama')
+
+        
     }
 }
 
