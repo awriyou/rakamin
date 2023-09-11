@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="">
+    <div class="w-1/2 h-auto px-4 align-center mx-auto">
+        <form action="">
+            <div >
+                <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                <input type="text" id="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nama Pendaftar" required>
+            </div>
+            <div class="mt-4">
+                <label for="umur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Umur</label>
+                <input type="text" id="umur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Min 20th" required>
+            </div>
+            <div class="mt-4">
+                <label for="UangSangu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Uang Sangu</label>
+                <input type="text" id="UangSangu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="100.000 - 1.000.000" required>
+            </div>
+        </form>
+    </div>
+
+    <div class="mt-20">
+        <table class="table table-striped border-2 text-center p-2">
+            <thead class="border-2">
+              <tr class="border-2">
+                <th class="w-25">Nama</th>
+                <th class="w-25">Umur</th>
+                <th class="w-25">Uang Sangu</th>
+              </tr>
+            </thead>
+            <tbody class="border-2">
+              <tr class="border-2">
+                <td>John Doe</td>
+                <td>25</td>
+                <td>1.000.000</td>
+              </tr>
+              <tr class="border-2">
+                <td>Jane Doe</td>
+                <td>26</td>
+                <td>500.000</td>
+              </tr class="border-2">
+              <tr>
+                <td>Peter Smith</td>
+                <td>30</td>
+                <td>200.000</td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </div>
+
+    <script>
+        class Pendaftar {
+            constructor(nama, umur, uangSangu){
+                this.nama = nama;
+                this.umur = umur;
+                this.uangSangu = uangSangu
+            }
+        }
+    </script>
+</body>
+</html>

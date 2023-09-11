@@ -2,7 +2,6 @@ let random = []
 let arrayGanjil = []
 let arrayGenap = []
 
-
 for(let i = 1; i <= 100; i ++){
     random.push(i)
     if(i % 2 == 0){
@@ -47,7 +46,6 @@ function rataRata(array) {
     return total/array.length
 }
 
-
 //=============fungsi perbandingan dari 2 array=================
 function perbandinganMIN(data1, data2){
     const ganjil = data1
@@ -60,7 +58,6 @@ function perbandinganMIN(data1, data2){
         return('nilai MIN nya sama')
     }
 }
-
 function perbandinganMAX(data1, data2){
     const ganjil = data1
     const genap = data2
@@ -83,7 +80,6 @@ function perbandinganSUM(data1, data2){
         return('nilai SUM nya sama')
     }
 }
-
 function perbandinganRataRata(data1, data2){
     const ganjil = data1
     const genap = data2
@@ -92,31 +88,16 @@ function perbandinganRataRata(data1, data2){
     }else if (genap > ganjil){
         return("Nilai AVERAGE lebih besar array genap")
     }else {
-        return('Rata-ratanya sama')
-
-        
+        return('Rata-ratanya sama')       
     }
 }
-
-
 
 //OUTPUT ==================
 
 // pemanggilan array yang telah dibuat
-console.log("Array 100 Index")
-for(let a of random){
-    console.log(a);
-}
-
-console.log("Array Genap")
-for(let a of arrayGenap){
-    console.log(a);
-}
-
-console.log("Array Ganjil")
-for(let a of arrayGanjil){
-    console.log(a);
-}
+console.log("Array 100 Index : ", random);
+console.log("Array Genap : ", arrayGenap)
+console.log("Array Ganjil : ", arrayGanjil)
 
 console.log("----------------------------------------")
 // Pemanggilan fungsi Min, Max, Sum, Average pada setiap array
@@ -136,3 +117,16 @@ console.log(perbandinganMAX(tertinggi(arrayGanjil), tertinggi(arrayGenap)))
 console.log(perbandinganSUM(jumlah(arrayGanjil), jumlah(arrayGenap)))
 console.log(perbandinganRataRata(rataRata(arrayGanjil), rataRata(arrayGenap)))
 
+
+
+
+
+// for(let a of random){
+//     console.log(a);
+// }
+// for(let a of arrayGenap){
+//     console.log(a);
+// }
+// for(let a of arrayGanjil){
+//     console.log(a);
+// }
