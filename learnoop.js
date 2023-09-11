@@ -1,20 +1,27 @@
 class Kendaraan {
-    constructor(produsen){
-        this.produsen = produsen
+    constructor(merk, cc){
+        this.merk = merk
+        this.cc = cc
     }
-    lokasi(){
-        return "Lokasi " + this.produsen + " Ada pada 40 Cabang di Indonesia"
+    penjualan() {
+        console.log('penjualan dengan CC  ' + this.cc + ' merupakan penjualan terbanyak');
     }
 }
 
 class Motor extends Kendaraan{
-    constructor(produsen){
-        super(produsen)
+    constructor(merk, cc, warna, panjang){
+        super(merk, cc)
+        this.warna = warna
+        this.panjang = panjang
     }
-    lokasi() {
-        return "Lokasi "+ this.produsen + " ada pada 30 cabang di Indonesia"
-    }
+
 }
 
-const honda = new Motor("Honda")
-console.log(honda.lokasi())
+const honda = new Motor("Vario", 150, "Hitam", 175)
+console.log(honda.merk)
+console.log(honda.cc)
+console.log(honda.warna)
+console.log(honda.panjang)
+ 
+
+honda.penjualan()
