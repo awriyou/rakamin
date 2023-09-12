@@ -57,3 +57,43 @@ console.log(transaksi.detail_pub());
 //KAPAN KITA MENGGUNAKAN ENCAPSULATION?
 //misal ingin menambahkan element dalam sebuah class function, dapat digunakan var atau encap agar tidak digunakan diluar,
 //jadi hanya digunaka ndidalam clas function saja, contoh nya seperti function diatas
+
+
+//ABSTRACT
+//keyword abstract digunakan untuk membuat class dan method yang bersifat abstrak
+//maksudnya adalah tidak bisa langsung di panggil class abstract nya, bisa jika memanggil anak nya
+//jika pada method abstract, method tersebut harus wajib dibuat, jika tidak dibuat akan error
+
+class Person{
+    constructor(nama){
+        if(this.constructor === Person){
+            throw new Error(
+                'Tidak boleh menggunakan class ini karena bersifat abstract'
+            )
+        }
+        this.nama = nama
+    }
+    greet(){
+        throw new Error(
+            'METHOD abstract belom di implementasi'
+        )
+    }
+}
+
+class Teacher extends Person{
+    constructor(nama, age){
+        super(nama)
+        this.age = age
+    }
+    // greet(){
+    //     console.log("HALLO nama saya " + this.nama);
+        
+    // }
+}
+
+const informatics = new Teacher("Zurnan", 31)
+
+// const informatics2 = new Person("Roeslan")
+ //Jadi tidak akan bisa dibuat object nya, karena class abstract
+
+informatics.greet()
