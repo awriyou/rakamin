@@ -113,10 +113,6 @@
           this.umur = umur;
           this.uang = uang;
         }
-
-        generateResume() {
-          return `Rata-rata pendaftar memiliki uang saku sebesar ${this.uang} dengan rata-rata umur ${this.umur}`;
-        }
       }
 
       const pendaftarList = [];
@@ -124,6 +120,7 @@
       const tableBody = document.getElementById("tabBody");
       const averageUangElement = document.getElementById("averageUang");
       const averageUmurElement = document.getElementById("averageUmur");
+
       // FUNGSI TAB
       function openTab(tabName) {
         const tabContents = document.getElementsByClassName("tabcontent");
@@ -157,22 +154,38 @@
         tableBody.innerHTML = "";
         for (const pendaftar of pendaftarList) {
           const row = tableBody.insertRow();
-          //Fungsi InsertRow dalam javascript digunakan untuk?
           row.insertCell(0).innerHTML = pendaftar.nama;
           row.insertCell(1).innerHTML = pendaftar.umur;
           row.insertCell(2).innerHTML = pendaftar.uang;
         }
       }
 
+      // function updateResume() {
+      //   const totalUang = pendaftarList.reduce(
+      //     (acc, pendaftar) => acc + pendaftar.uang,
+      //     0
+      //   );
+      //   const totalUmur = pendaftarList.reduce(
+      //     (acc, pendaftar) => acc + pendaftar.umur,
+      //     0
+      //   );
+      //   const averageUang = totalUang / pendaftarList.length;
+      //   const averageUmur = totalUmur / pendaftarList.length;
+
+      //   averageUangElement.textContent = averageUang;
+      //   averageUmurElement.textContent = averageUmur;
+      // }
+
       function updateResume() {
-        const totalUang = pendaftarList.reduce(
-          (acc, pendaftar) => acc + pendaftar.uang,
-          0
-        );
-        const totalUmur = pendaftarList.reduce(
-          (acc, pendaftar) => acc + pendaftar.umur,
-          0
-        );
+        let totalUang = 0; // Inisialisasi totalUang dengan nilai awal 0
+        let totalUmur = 0; // Inisialisasi totalUmur dengan nilai awal 0
+
+        // Perulangan for untuk menjumlahkan uang dan umur dari setiap pendaftar
+        for (const pendaftar of pendaftarList) {
+          totalUang += pendaftar.uang; // Menambahkan uang pendaftar saat ini ke totalUang
+          totalUmur += pendaftar.umur; // Menambahkan umur pendaftar saat ini ke totalUmur
+        }
+
         const averageUang = totalUang / pendaftarList.length;
         const averageUmur = totalUmur / pendaftarList.length;
 
