@@ -1,67 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/rakaminlogo.png" />
     <title>Document</title>
-</head>
-<body class="">
-    <div class="w-1/2 h-auto px-4 align-center mx-auto mt-8">
-        <form action="">
-            <div >
-                <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-                <input type="text" id="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nama Pendaftar" required>
-            </div>
-            <div class="mt-4">
-                <label for="umur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Umur</label>
-                <input type="text" id="umur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Min 20th" required>
-            </div>
-            <div class="mt-4">
-                <label for="UangSangu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Uang Sangu</label>
-                <input type="text" id="UangSangu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="100.000 - 1.000.000" required>
-            </div>
-        </form>
+  </head>
+  <body>
+    <div class="w-1/4 bg-green-700 rounded-br-2xl pb-2 px-2" id="regForm">
+      <button
+        class="ml-4 pt-2 pb-1 px-6 text-md font-bold text-white hover:bg-slate-300 hover:rounded-b-xl hover:text-black active:bg-green-300 active:rounded-xl"
+        onclick="openTab('Register')"
+      >
+        Registrasi
+      </button>
+      <button
+        class="pt-2 pb-1 px-6 text-md font-bold text-white hover:bg-slate-300 hover:rounded-b-xl hover:text-black active:bg-green-300 active:rounded-xl"
+        onclick="openTab('ListRegister')"
+      >
+        List Pendaftar
+      </button>
     </div>
 
-    <div class="container mx-auto bg-white p-4 shadow-lg rounded-lg">
-        <table class="table-auto mx-auto">
-            <thead>
-                <!-- Thead 1 -->
-                <tr>
-                    <th class="px-4 py-2">Nama</th>
-                    <th class="px-4 py-2">Umur</th>
-                    <th class="px-4 py-2">Uang Sangu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                </tr>
-                <tr>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                </tr>
-                <tr>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                    <td class="border px-4 py-2">B</td>
-                </tr>
-            </tbody>
-        </table>
+    <div
+      class="tabcontent w-1/2 h-auto px-4 align-center mx-auto mt-8 relative"
+      id="Register"
+    >
+      <h2 class="text-xl font-bold font-headl text-center">Register</h2>
+      <form id="registrationForm">
+        <div>
+          <label
+            for="nama"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nama</label
+          >
+          <input
+            type="text"
+            id="nama"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Nama Pendaftar"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label
+            for="umur"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Umur</label
+          >
+          <input
+            type="text"
+            id="umur"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Min 20th"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label
+            for="uang"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Uang Sangu</label
+          >
+          <input
+            type="text"
+            id="uang"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="100.000 - 1.000.000"
+            required
+          />
+        </div>
+        <button
+          type="button"
+          onclick="submitData()"
+          class="mt-6 px-6 py-2 bg-green-700 text-white text-sm font-bold rounded-xl absolute right-8"
+        >
+          Submit
+        </button>
+      </form>
     </div>
 
+    <div
+      id="ListRegister"
+      class="tabcontent container mx-auto bg-white p-4 shadow-lg rounded-lg"
+    >
+      <h2 class="text-xl text-xl font-bold font-headl text-center">
+        List Pendaftar
+      </h2>
+      <p>
+        Rata-rata pendaftar memiliki uang saku sebesar:
+        <span id="averageUang"></span>
+      </p>
+      <p>Rata-rata umur pendaftar: <span id="averageUmur"></span></p>
+      <table id="table" class="mx-auto border-collapse w-full mt-20">
+        <thead>
+          <tr>
+            <th class="px-4 py-2">Nama</th>
+            <th class="px-4 py-2">Umur</th>
+            <th class="px-4 py-2">Uang Sangu</th>
+          </tr>
+        </thead>
+        <tbody id="tabBody" class="text-center"></tbody>
+      </table>
+    </div>
+
+    <!-- ? JAVASCRIPT -->
     <script>
-        class Pendaftar {
-            constructor(nama, umur, uangSangu){
-                this.nama = nama;
-                this.umur = umur;
-                this.uangSangu = uangSangu
-            }
+      class Pendaftar {
+        constructor(nama, umur, uang) {
+          this.nama = nama;
+          this.umur = umur;
+          this.uang = uang;
         }
+
+        generateResume() {
+          return `Rata-rata pendaftar memiliki uang saku sebesar ${this.uang} dengan rata-rata umur ${this.umur}`;
+        }
+      }
+
+      const pendaftarList = [];
+      const registrationForm = document.getElementById("regForm");
+      const tableBody = document.getElementById("tabBody");
+      const averageUangElement = document.getElementById("averageUang");
+      const averageUmurElement = document.getElementById("averageUmur");
+      // FUNGSI TAB
+      function openTab(tabName) {
+        const tabContents = document.getElementsByClassName("tabcontent");
+        for (const tab of tabContents) {
+          tab.style.display = "none";
+        }
+
+        document.getElementById(tabName).style.display = "block";
+      }
+
+      function submitData() {
+        const nama = document.getElementById("nama").value;
+        const umur = parseInt(document.getElementById("umur").value);
+        const uang = parseInt(document.getElementById("uang").value);
+        if (nama.length < 10 || umur < 20 || uang < 100000 || uang > 1000000) {
+          alert("Data tidak memenuhi kriteria.");
+          return;
+        } else {
+          alert("Data berhasil dimasukan");
+        }
+
+        const pendaftar = new Pendaftar(nama, umur, uang);
+        pendaftarList.push(pendaftar);
+
+        updateTable();
+        updateResume();
+        clearForm();
+      }
+
+      function updateTable() {
+        tableBody.innerHTML = "";
+        for (const pendaftar of pendaftarList) {
+          const row = tableBody.insertRow();
+          //Fungsi InsertRow dalam javascript digunakan untuk?
+          row.insertCell(0).innerHTML = pendaftar.nama;
+          row.insertCell(1).innerHTML = pendaftar.umur;
+          row.insertCell(2).innerHTML = pendaftar.uang;
+        }
+      }
+
+      function updateResume() {
+        const totalUang = pendaftarList.reduce(
+          (acc, pendaftar) => acc + pendaftar.uang,
+          0
+        );
+        const totalUmur = pendaftarList.reduce(
+          (acc, pendaftar) => acc + pendaftar.umur,
+          0
+        );
+        const averageUang = totalUang / pendaftarList.length;
+        const averageUmur = totalUmur / pendaftarList.length;
+
+        averageUangElement.textContent = averageUang;
+        averageUmurElement.textContent = averageUmur;
+      }
+
+      function clearForm() {
+        document.getElementById("nama").value = "";
+        document.getElementById("umur").value = "";
+        document.getElementById("uang").value = "";
+      }
+
+      openTab("Register");
     </script>
-</body>
+  </body>
 </html>
