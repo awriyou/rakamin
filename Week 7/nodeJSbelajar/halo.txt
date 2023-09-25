@@ -1,0 +1,1 @@
+Akucoba membuat file write and read di fs
